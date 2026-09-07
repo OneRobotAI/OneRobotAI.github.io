@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HumanaOpen — Open-Source Semi-Humanoid Robot</title>
+  <meta name="description" content="HumanaOpen is an open-source semi-humanoid robot featuring 7-DOF dual arms, differential drive, and leadscrew lift. Perfect for robotics research and embodied AI.">
+  <meta property="og:title" content="HumanaOpen — Open-Source Semi-Humanoid Robot">
+  <meta property="og:description" content="Open-source semi-humanoid robot with 7-DOF dual arms, differential drive, and leadscrew lift.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://onerobotai.github.io/">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%2300B4D8'/><text x='16' y='21' font-size='16' fill='white' text-anchor='middle' font-family='sans-serif'>🤖</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">onerobot</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#features" data-en="Features" data-zh="功能特性">Features</a></li>
+        <li><a href="#specs" data-en="Specs" data-zh="技术参数">Specs</a></li>
+        <li><a href="#download" data-en="Download" data-zh="下载">Download</a></li>
+        <li><a href="#contact" data-en="Contact" data-zh="联系我们">Contact</a></li>
+        <li><button class="nav__lang" id="langToggle" aria-label="Switch language">中/EN</button></li>
+        <li><a href="https://m.tb.cn/h.8L4yb9vlYloGQMV" class="nav__cta" data-en="Buy now" data-zh="立即购买" target="_blank" rel="noopener">Buy now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="hero">
+    <div class="hero__inner">
+      <div class="hero__content">
+        <h1 class="hero__title" data-en="HumanaOpen" data-zh="HumanaOpen">HumanaOpen</h1>
+        <p class="hero__tagline" data-en="Open-source semi-humanoid robot — 7-DOF dual arms, differential drive, leadscrew lift." data-zh="开源半人形机器人 — 7自由度双臂、差速底盘、丝杠升降。">Open-source semi-humanoid robot — 7-DOF dual arms, differential drive, leadscrew lift.</p>
+        <div class="hero__actions">
+          <a href="https://m.tb.cn/h.8L4yb9vlYloGQMV" class="btn btn--primary" data-en="Buy on Taobao" data-zh="淘宝购买" target="_blank" rel="noopener">Buy on Taobao</a>
+          <a href="https://github.com/OneRobotAI/HumanaOpen" class="btn btn--outline" data-en="View on GitHub" data-zh="查看 GitHub" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+      </div>
+      <div class="hero__image">
+        <div class="placeholder" aria-label="Product photo">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/>
+          </svg>
+          <p data-en="Product photo coming soon" data-zh="产品图待补充">Product photo coming soon</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- FEATURES -->
+  <section class="section features" id="features">
+    <div class="container">
+      <h2 class="section__title" data-en="Features" data-zh="功能特性">Features</h2>
+      <p class="section__subtitle" data-en="Everything you need for embodied AI research and development." data-zh="满足具身智能研发的一切需求。">Everything you need for embodied AI research and development.</p>
+      <div class="features__grid">
+
+        <div class="feature-card reveal">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20M6 6l12 12M18 6L6 18"/></svg>
+          </div>
+          <h3 class="feature-card__title" data-en="7-DOF Dual Arms + Grippers" data-zh="7自由度双臂 + 夹爪">7-DOF Dual Arms + Grippers</h3>
+          <p class="feature-card__desc" data-en="Two fully articulated 7-DOF arms with ST3215 C018 servos and integrated grippers for precise manipulation tasks." data-zh="两条7自由度全关节手臂，采用ST3215 C018舵机，配备集成夹爪，实现精准操控任务。">Two fully articulated 7-DOF arms with ST3215 C018 servos and integrated grippers for precise manipulation tasks.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3 class="feature-card__title" data-en="Differential-Drive Base" data-zh="差速驱动底盘">Differential-Drive Base</h3>
+          <p class="feature-card__desc" data-en="Robust differential-drive locomotion using ST3215 wheel servos for smooth, omnidirectional movement." data-zh="采用ST3215轮式舵机的差速驱动系统，实现平稳全向移动。">Robust differential-drive locomotion using ST3215 wheel servos for smooth, omnidirectional movement.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v8l4 4"/><rect x="4" y="18" width="16" height="4" rx="1"/><path d="M8 14l4-4 4 4"/></svg>
+          </div>
+          <h3 class="feature-card__title" data-en="Leadscrew Lift (Self-Locking)" data-zh="丝杠升降（自锁）">Leadscrew Lift (Self-Locking)</h3>
+          <p class="feature-card__desc" data-en="ST3250 leadscrew mechanism with 3–200 mm range. Self-locking design ensures zero-persistence — no re-homing needed." data-zh="ST3250丝杠机构，行程3–200mm。自锁设计确保零滞回 — 无需回零。">ST3250 leadscrew mechanism with 3–200 mm range. Self-locking design ensures zero-persistence — no re-homing needed.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M3 21v-2a7 7 0 0114 0v2"/></svg>
+          </div>
+          <h3 class="feature-card__title" data-en="Head Pan/Tilt" data-zh="头部云台">Head Pan/Tilt</h3>
+          <p class="feature-card__desc" data-en="Pan and tilt head unit for dynamic camera positioning and environmental awareness." data-zh="云台头部模块，支持动态相机定位与环境感知。">Pan and tilt head unit for dynamic camera positioning and environmental awareness.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1h22v22H1z"/><path d="M8 1v22M1 8h22"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <h3 class="feature-card__title" data-en="Vision Pipeline (LeRobot ACT / SmolVLA)" data-zh="视觉管线（LeRobot ACT / SmolVLA）">Vision Pipeline (LeRobot ACT / SmolVLA)</h3>
+          <p class="feature-card__desc" data-en="Full vision pipeline supporting LeRobot ACT and SmolVLA policies. 3–4× 720p cameras for rich spatial perception." data-zh="完整视觉管线，支持LeRobot ACT和SmolVLA策略。3-4路720p相机提供丰富空间感知。">Full vision pipeline supporting LeRobot ACT and SmolVLA policies. 3–4× 720p cameras for rich spatial perception.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M7 8h2M7 11h4"/></svg>
+          </div>
+          <h3 class="feature-card__title" data-en="Dual-Machine Teleop & Training" data-zh="双机遥操与训练">Dual-Machine Teleop & Training</h3>
+          <p class="feature-card__desc" data-en="ZMQ-based dual-machine architecture for teleoperation, data collection, training, and real-time inference. Display via Rerun / Foxglove." data-zh="基于ZMQ的双机架构，支持遥操、数据采集、训练与实时推理。通过Rerun / Foxglove可视化显示。">ZMQ-based dual-machine architecture for teleoperation, data collection, training, and real-time inference. Display via Rerun / Foxglove.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECS -->
+  <section class="section specs" id="specs">
+    <div class="container">
+      <h2 class="section__title" data-en="Technical Specifications" data-zh="技术参数">Technical Specifications</h2>
+      <p class="section__subtitle" data-en="Detailed hardware and software specifications." data-zh="详细硬件与软件参数。">Detailed hardware and software specifications.</p>
+      <div class="specs__table-wrap">
+        <table class="specs__table">
+          <thead>
+            <tr>
+              <th data-en="Component" data-zh="组件">Component</th>
+              <th data-en="Specification" data-zh="规格">Specification</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-en="Arms" data-zh="手臂">Arms</td>
+              <td data-en="2× 7-DOF + gripper (ST3215 C018)" data-zh="2× 7自由度 + 夹爪（ST3215 C018）">2× 7-DOF + gripper (ST3215 C018)</td>
+            </tr>
+            <tr>
+              <td data-en="Leader Arms" data-zh="主手臂">Leader Arms</td>
+              <td data-en="ST3215 C046" data-zh="ST3215 C046">ST3215 C046</td>
+            </tr>
+            <tr>
+              <td data-en="Head" data-zh="头部">Head</td>
+              <td data-en="Pan / Tilt" data-zh="水平 / 垂直旋转">Pan / Tilt</td>
+            </tr>
+            <tr>
+              <td data-en="Lift" data-zh="升降">Lift</td>
+              <td data-en="ST3250 leadscrew, 3–200 mm, self-locking, zero-persistence" data-zh="ST3250丝杠，3–200mm，自锁，零滞回">ST3250 leadscrew, 3–200 mm, self-locking, zero-persistence</td>
+            </tr>
+            <tr>
+              <td data-en="Base" data-zh="底盘">Base</td>
+              <td data-en="Differential drive (ST3215 wheel servos)" data-zh="差速驱动（ST3215轮式舵机）">Differential drive (ST3215 wheel servos)</td>
+            </tr>
+            <tr>
+              <td data-en="Cameras" data-zh="相机">Cameras</td>
+              <td data-en="3–4× 720p" data-zh="3–4路 720p">3–4× 720p</td>
+            </tr>
+            <tr>
+              <td data-en="Controller" data-zh="控制器">Controller</td>
+              <td data-en="Raspberry Pi 5 (4 GB) or Jetson Orin Nano Super (8 GB)" data-zh="树莓派5（4GB）或 Jetson Orin Nano Super（8GB）">Raspberry Pi 5 (4 GB) or Jetson Orin Nano Super (8 GB)</td>
+            </tr>
+            <tr>
+              <td data-en="Software" data-zh="软件">Software</td>
+              <td data-en="LeRobot + PyTorch" data-zh="LeRobot + PyTorch">LeRobot + PyTorch</td>
+            </tr>
+            <tr>
+              <td data-en="Visualization" data-zh="可视化">Visualization</td>
+              <td data-en="Rerun / Foxglove" data-zh="Rerun / Foxglove">Rerun / Foxglove</td>
+            </tr>
+            <tr>
+              <td data-en="Estimated BOM" data-zh="预估BOM">Estimated BOM</td>
+              <td data-en="≈ 5,533 RMB" data-zh="≈ 5,533 人民币">≈ 5,533 RMB</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- PIPELINE -->
+  <section class="section pipeline" id="pipeline">
+    <div class="container">
+      <h2 class="section__title" data-en="Workflow Pipeline" data-zh="工作流程">Workflow Pipeline</h2>
+      <p class="section__subtitle" data-en="From teleoperation to autonomous inference in four steps." data-zh="从遥操作到自主推理，四步完成。">From teleoperation to autonomous inference in four steps.</p>
+      <div class="pipeline__flow">
+        <div class="pipeline__step reveal">
+          <div class="pipeline__step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 11V6a2 2 0 00-4 0v5M14 10V4a2 2 0 00-4 0v6M10 9.5V6a2 2 0 00-4 0v8l-1.46-1.46a2 2 0 00-2.83 2.83L5 20.59a4 4 0 004 3.41h5a4 4 0 004-4v-5a2 2 0 00-4 0"/></svg>
+          </div>
+          <h3 data-en="Teleop" data-zh="遥操作">Teleop</h3>
+          <p data-en="Leader-arm control via ZMQ" data-zh="ZMQ主臂控制">Leader-arm control via ZMQ</p>
+        </div>
+        <div class="pipeline__arrow reveal">→</div>
+        <div class="pipeline__step reveal">
+          <div class="pipeline__step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+          </div>
+          <h3 data-en="Collect" data-zh="采集">Collect</h3>
+          <p data-en="Record demonstration data" data-zh="录制演示数据">Record demonstration data</p>
+        </div>
+        <div class="pipeline__arrow reveal">→</div>
+        <div class="pipeline__step reveal">
+          <div class="pipeline__step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+          </div>
+          <h3 data-en="Train" data-zh="训练">Train</h3>
+          <p data-en="ACT / SmolVLA policy" data-zh="ACT / SmolVLA 策略">ACT / SmolVLA policy</p>
+        </div>
+        <div class="pipeline__arrow reveal">→</div>
+        <div class="pipeline__step reveal">
+          <div class="pipeline__step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <h3 data-en="Infer" data-zh="推理">Infer</h3>
+          <p data-en="Autonomous visual control" data-zh="自主视觉控制">Autonomous visual control</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROADMAP -->
+  <section class="section roadmap" id="roadmap">
+    <div class="container">
+      <h2 class="section__title" data-en="Roadmap" data-zh="路线图">Roadmap</h2>
+      <p class="section__subtitle" data-en="Building the complete open-source ecosystem." data-zh="构建完整的开源生态系统。">Building the complete open-source ecosystem.</p>
+      <div class="roadmap__grid">
+        <ul class="roadmap__list reveal">
+          <li data-en="URDF Model" data-zh="URDF 模型">URDF Model</li>
+          <li data-en="Bill of Materials (BOM)" data-zh="物料清单（BOM）">Bill of Materials (BOM)</li>
+          <li data-en="Assembly Guide" data-zh="装配指南">Assembly Guide</li>
+          <li data-en="CAD Files" data-zh="CAD 文件">CAD Files</li>
+          <li data-en="AI Agent Integration" data-zh="AI Agent 集成">AI Agent Integration</li>
+        </ul>
+        <ul class="roadmap__list reveal">
+          <li data-en="Vision-Based Grasping" data-zh="视觉抓取">Vision-Based Grasping</li>
+          <li data-en="Autonomous Navigation" data-zh="自主导航">Autonomous Navigation</li>
+          <li data-en="Data Collection Toolkit" data-zh="数据采集工具">Data Collection Toolkit</li>
+          <li data-en="Embodied World Models" data-zh="具身世界模型">Embodied World Models</li>
+        </ul>
+      </div>
+      <p class="roadmap__note" data-en="These items are actively being developed. Stay tuned!" data-zh="以上项目正在积极开发中，敬请期待！">These items are actively being developed. Stay tuned!</p>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD -->
+  <section class="section download" id="download">
+    <div class="container">
+      <h2 class="section__title" data-en="Open Source &amp; Download" data-zh="开源与下载">Open Source &amp; Download</h2>
+      <p class="section__subtitle" data-en="Everything is open. Clone, build, and contribute." data-zh="一切开源。克隆、构建、贡献。">Everything is open. Clone, build, and contribute.</p>
+      <div class="download__grid">
+        <a href="https://github.com/OneRobotAI/HumanaOpen" class="download__card reveal" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+          <h3 data-en="GitHub Repository" data-zh="GitHub 仓库">GitHub Repository</h3>
+          <p data-en="Source code, issues, and contributions" data-zh="源代码、Issues与贡献">Source code, issues, and contributions</p>
+        </a>
+        <a href="https://github.com/OneRobotAI/HumanaOpen/tree/main/docs" class="download__card reveal" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+          <h3 data-en="Documentation" data-zh="文档">Documentation</h3>
+          <p data-en="Assembly, wiring, and usage guides" data-zh="装配、接线与使用指南">Assembly, wiring, and usage guides</p>
+        </a>
+        <a href="https://github.com/OneRobotAI/HumanaOpen/blob/main/README.md" class="download__card reveal" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <h3>README</h3>
+          <p data-en="English / 中文 / 日本語 / 한국어" data-zh="英文 / 中文 / 日文 / 韩文">English / 中文 / 日本語 / 한국어</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUY / CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <h2 class="section__title" data-en="Buy &amp; Contact" data-zh="购买与联系">Buy &amp; Contact</h2>
+      <p class="section__subtitle" data-en="Get your HumanaOpen or reach out to the team." data-zh="获取您的 HumanaOpen 或联系团队。">Get your HumanaOpen or reach out to the team.</p>
+      <div class="contact__grid">
+        <div class="contact__card reveal">
+          <h3 data-en="Official Store" data-zh="官方店铺">Official Store</h3>
+          <p data-en="Shop name: <strong>onerobot</strong>" data-zh="店铺名：<strong>onerobot</strong>">Shop name: <strong>onerobot</strong></p>
+          <a href="https://m.tb.cn/h.8L4yb9vlYloGQMV" class="btn btn--primary" data-en="Buy now on Taobao" data-zh="立即在淘宝购买" target="_blank" rel="noopener">Buy now on Taobao</a>
+          <div class="contact__qr">
+            <img src="assets/store_qr.jpg" alt="onerobot store QR code" loading="lazy">
+          </div>
+        </div>
+        <div class="contact__card reveal">
+          <h3 data-en="WeChat" data-zh="微信">WeChat</h3>
+          <p data-en="Scan to add us on WeChat" data-zh="扫码添加微信">Scan to add us on WeChat</p>
+          <div class="contact__qr">
+            <img src="assets/wechat_qr.png" alt="WeChat contact QR code" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__license" data-en="Licensed under Apache 2.0. © OneRobotAI" data-zh="Apache 2.0 许可证。© OneRobotAI">Licensed under Apache 2.0. © OneRobotAI</p>
+        <div class="footer__links">
+          <a href="https://github.com/OneRobotAI/HumanaOpen" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://github.com/OneRobotAI/HumanaOpen/blob/main/README.md" target="_blank" rel="noopener">README</a>
+          <a href="https://github.com/OneRobotAI/HumanaOpen/tree/main/docs" target="_blank" rel="noopener" data-en="Docs" data-zh="文档">Docs</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
