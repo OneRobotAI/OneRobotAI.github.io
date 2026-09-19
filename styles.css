@@ -351,33 +351,12 @@ ul { list-style: none; }
   justify-content: center;
 }
 
-/* ============================================
-   Placeholder
-   ============================================ */
-
-.placeholder {
+.hero__img {
   width: 100%;
-  max-width: 480px;
-  aspect-ratio: 4/3;
-  background: linear-gradient(135deg, #F1F5F9 0%, #E2E8F0 100%);
+  max-width: 560px;
+  height: auto;
   border-radius: var(--radius-lg);
-  border: 2px dashed var(--color-border);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-3);
-  color: var(--color-text-secondary);
-  font-size: 0.875rem;
-}
-
-.placeholder--qr {
-  width: 200px;
-  height: 200px;
-  max-width: 200px;
-  aspect-ratio: 1;
-  margin-top: var(--space-4);
-  font-size: 0.75rem;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.10);
 }
 
 /* ============================================
@@ -567,10 +546,17 @@ ul { list-style: none; }
   position: relative;
 }
 
-.roadmap__list li::before {
-  content: '☐';
-  margin-right: var(--space-2);
-  color: var(--color-primary);
+.roadmap__status {
+  display: inline-block;
+  width: 1.4em;
+}
+
+.roadmap__status--done {
+  color: var(--color-success, #22c55e);
+}
+
+.roadmap__status--todo {
+  color: var(--color-text-secondary);
 }
 
 .roadmap__list li:hover {

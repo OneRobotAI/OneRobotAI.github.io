@@ -30,7 +30,6 @@
         <li><a href="#download" data-en="Download" data-zh="下载">Download</a></li>
         <li><a href="#contact" data-en="Contact" data-zh="联系我们">Contact</a></li>
         <li><button class="nav__lang" id="langToggle" aria-label="Switch language">中/EN</button></li>
-        <li><a href="https://m.tb.cn/h.8L4yb9vlYloGQMV" class="nav__cta" data-en="Buy now" data-zh="立即购买" target="_blank" rel="noopener">Buy now</a></li>
       </ul>
     </div>
   </nav>
@@ -42,17 +41,11 @@
         <h1 class="hero__title" data-en="HumanaOpen" data-zh="HumanaOpen">HumanaOpen</h1>
         <p class="hero__tagline" data-en="Open-source semi-humanoid robot — 7-DOF dual arms, differential drive, leadscrew lift." data-zh="开源半人形机器人 — 7自由度双臂、差速底盘、丝杠升降。">Open-source semi-humanoid robot — 7-DOF dual arms, differential drive, leadscrew lift.</p>
         <div class="hero__actions">
-          <a href="https://m.tb.cn/h.8L4yb9vlYloGQMV" class="btn btn--primary" data-en="Buy on Taobao" data-zh="淘宝购买" target="_blank" rel="noopener">Buy on Taobao</a>
           <a href="https://github.com/OneRobotAI/HumanaOpen" class="btn btn--outline" data-en="View on GitHub" data-zh="查看 GitHub" target="_blank" rel="noopener">View on GitHub</a>
         </div>
       </div>
       <div class="hero__image">
-        <div class="placeholder" aria-label="Product photo">
-          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/>
-          </svg>
-          <p data-en="Product photo coming soon" data-zh="产品图待补充">Product photo coming soon</p>
-        </div>
+        <img src="assets/HumanaOpen.png" alt="HumanaOpen" class="hero__img" loading="eager">
       </div>
     </div>
   </header>
@@ -168,7 +161,7 @@
             </tr>
             <tr>
               <td data-en="Estimated BOM" data-zh="预估BOM">Estimated BOM</td>
-              <td data-en="≈ 5,533 RMB" data-zh="≈ 5,533 人民币">≈ 5,533 RMB</td>
+              <td data-en="≈ 5,718 RMB" data-zh="≈ 5,718 人民币">≈ 5,718 RMB</td>
             </tr>
           </tbody>
         </table>
@@ -224,17 +217,19 @@
       <p class="section__subtitle" data-en="Building the complete open-source ecosystem." data-zh="构建完整的开源生态系统。">Building the complete open-source ecosystem.</p>
       <div class="roadmap__grid">
         <ul class="roadmap__list reveal">
-          <li data-en="URDF Model" data-zh="URDF 模型">URDF Model</li>
-          <li data-en="Bill of Materials (BOM)" data-zh="物料清单（BOM）">Bill of Materials (BOM)</li>
-          <li data-en="Assembly Guide" data-zh="装配指南">Assembly Guide</li>
-          <li data-en="CAD Files" data-zh="CAD 文件">CAD Files</li>
-          <li data-en="AI Agent Integration" data-zh="AI Agent 集成">AI Agent Integration</li>
+          <li><span class="roadmap__status roadmap__status--done">✅</span> <span data-en="ACT, SmolVLA" data-zh="ACT, SmolVLA">ACT, SmolVLA</span></li>
+          <li><span class="roadmap__status roadmap__status--done">✅</span> <span data-en="Bill of Materials (BOM)" data-zh="物料清单（BOM）">Bill of Materials (BOM)</span></li>
+          <li><span class="roadmap__status roadmap__status--done">✅</span> <span data-en="Assembly Guide" data-zh="组装指南">Assembly Guide</span></li>
+          <li><span class="roadmap__status roadmap__status--done">✅</span> <span data-en="Autonomous Navigation" data-zh="自主导航">Autonomous Navigation</span></li>
+          <li><span class="roadmap__status roadmap__status--todo">☐</span> <span data-en="CAD Files" data-zh="CAD 文件">CAD Files</span></li>
+          <li><span class="roadmap__status roadmap__status--todo">☐</span> <span data-en="Lite Version" data-zh="Lite 版本">Lite Version</span></li>
         </ul>
         <ul class="roadmap__list reveal">
-          <li data-en="Vision-Based Grasping" data-zh="视觉抓取">Vision-Based Grasping</li>
-          <li data-en="Autonomous Navigation" data-zh="自主导航">Autonomous Navigation</li>
-          <li data-en="Data Collection Toolkit" data-zh="数据采集工具">Data Collection Toolkit</li>
-          <li data-en="Embodied World Models" data-zh="具身世界模型">Embodied World Models</li>
+          <li><span class="roadmap__status roadmap__status--todo">☐</span> <span data-en="URDF Model" data-zh="URDF 模型">URDF Model</span></li>
+          <li><span class="roadmap__status roadmap__status--todo">☐</span> <span data-en="AI Agent Integration" data-zh="AI Agent 集成">AI Agent Integration</span></li>
+          <li><span class="roadmap__status roadmap__status--todo">☐</span> <span data-en="Vision-Based Grasping" data-zh="视觉抓取">Vision-Based Grasping</span></li>
+          <li><span class="roadmap__status roadmap__status--todo">☐</span> <span data-en="Data Collection Toolkit" data-zh="数据采集工具">Data Collection Toolkit</span></li>
+          <li><span class="roadmap__status roadmap__status--todo">☐</span> <span data-en="Embodied World Models" data-zh="具身世界模型">Embodied World Models</span></li>
         </ul>
       </div>
       <p class="roadmap__note" data-en="These items are actively being developed. Stay tuned!" data-zh="以上项目正在积极开发中，敬请期待！">These items are actively being developed. Stay tuned!</p>
@@ -260,31 +255,23 @@
         <a href="https://github.com/OneRobotAI/HumanaOpen/blob/main/README.md" class="download__card reveal" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
           <h3>README</h3>
-          <p data-en="English / 中文 / 日本語 / 한국어" data-zh="英文 / 中文 / 日文 / 韩文">English / 中文 / 日本語 / 한국어</p>
+          <p data-en="English / 中文 / Français / 한국어" data-zh="英文 / 中文 / 法文 / 韩文">English / 中文 / Français / 한국어</p>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- BUY / CONTACT -->
+  <!-- CONTACT -->
   <section class="section contact" id="contact">
     <div class="container">
-      <h2 class="section__title" data-en="Buy &amp; Contact" data-zh="购买与联系">Buy &amp; Contact</h2>
-      <p class="section__subtitle" data-en="Get your HumanaOpen or reach out to the team." data-zh="获取您的 HumanaOpen 或联系团队。">Get your HumanaOpen or reach out to the team.</p>
+      <h2 class="section__title" data-en="Contact &amp; Cooperation" data-zh="交流与合作">Contact &amp; Cooperation</h2>
+      <p class="section__subtitle" data-en="Reach out to the team." data-zh="联系项目团队。">Reach out to the team.</p>
       <div class="contact__grid">
         <div class="contact__card reveal">
-          <h3 data-en="Official Store" data-zh="官方店铺">Official Store</h3>
-          <p data-en="Shop name: <strong>onerobot</strong>" data-zh="店铺名：<strong>onerobot</strong>">Shop name: <strong>onerobot</strong></p>
-          <a href="https://m.tb.cn/h.8L4yb9vlYloGQMV" class="btn btn--primary" data-en="Buy now on Taobao" data-zh="立即在淘宝购买" target="_blank" rel="noopener">Buy now on Taobao</a>
+          <h3 data-en="Product Communication" data-zh="产品咨询">Product Communication</h3>
+          <p data-en="Scan the QR code to reach our product team" data-zh="扫描二维码联系产品团队">Scan the QR code to reach our product team</p>
           <div class="contact__qr">
-            <img src="assets/store_qr.jpg" alt="onerobot store QR code" loading="lazy">
-          </div>
-        </div>
-        <div class="contact__card reveal">
-          <h3 data-en="WeChat" data-zh="微信">WeChat</h3>
-          <p data-en="Scan to add us on WeChat" data-zh="扫码添加微信">Scan to add us on WeChat</p>
-          <div class="contact__qr">
-            <img src="assets/wechat_qr.png" alt="WeChat contact QR code" loading="lazy">
+            <img src="assets/wechat_qr.png" alt="Product communication QR code" loading="lazy">
           </div>
         </div>
       </div>
