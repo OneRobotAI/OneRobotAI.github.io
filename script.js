@@ -62,6 +62,12 @@
       }
     });
 
+    var heroImg = document.querySelector('.hero__img');
+    if (heroImg) {
+      var imgSrc = heroImg.getAttribute('data-' + lang + '-src');
+      if (imgSrc) heroImg.src = imgSrc;
+    }
+
     // Swap placeholders (aria-label + text)
     document.querySelectorAll('.placeholder').forEach(function (el) {
       var label = el.getAttribute('data-' + lang + '-aria');
