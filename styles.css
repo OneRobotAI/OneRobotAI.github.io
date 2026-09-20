@@ -346,6 +346,33 @@ ul { list-style: none; }
   flex-wrap: wrap;
 }
 
+.hero__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: var(--space-5);
+  max-width: 480px;
+}
+
+.hero__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  border: 1px solid rgba(0, 180, 216, 0.25);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.hero__badge::before {
+  content: "●";
+  font-size: 0.5rem;
+}
+
 .hero__image {
   display: flex;
   justify-content: center;
@@ -365,7 +392,7 @@ ul { list-style: none; }
 
 .features__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: var(--space-6);
 }
 
@@ -740,6 +767,12 @@ ul { list-style: none; }
     justify-content: center;
   }
 
+  .hero__badges {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .hero__image {
     order: -1;
   }
@@ -822,6 +855,12 @@ ul { list-style: none; }
 
   .features__grid {
     grid-template-columns: 1fr;
+  }
+
+  .hero__badge {
+    white-space: normal;
+    text-align: center;
+    line-height: 1.4;
   }
 
   .pipeline__flow {

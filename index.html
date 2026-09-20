@@ -39,9 +39,14 @@
     <div class="hero__inner">
       <div class="hero__content">
         <h1 class="hero__title" data-en="HumanaOpen" data-zh="HumanaOpen">HumanaOpen</h1>
-        <p class="hero__tagline" data-en="Open-source semi-humanoid robot — 7+1-DOF dual arms, mobile base, electric lift." data-zh="开源半人形机器人 — 7+1自由度双臂、移动底盘、电动升降。">Open-source semi-humanoid robot — 7+1-DOF dual arms, mobile base, electric lift.</p>
+        <p class="hero__tagline" data-en="Open-source semi-humanoid robot — 7+1-DOF humanoid arms, dual-mode mobile base, electric lift, vision navigation." data-zh="开源半人形机器人 — 7+1自由度仿人形双臂、双模式移动底盘、电动升降、视觉导航。">Open-source semi-humanoid robot — 7+1-DOF humanoid arms, dual-mode mobile base, electric lift, vision navigation.</p>
         <div class="hero__actions">
           <a href="https://github.com/OneRobotAI/HumanaOpen" class="btn btn--outline" data-en="View on GitHub" data-zh="查看 GitHub" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+        <div class="hero__badges">
+          <span class="hero__badge" data-en="Low-cost &amp; Fully Open Source" data-zh="低成本全开源">Low-cost &amp; Fully Open Source</span>
+          <span class="hero__badge" data-en="7+1-DOF Humanoid Arms" data-zh="7+1自由度仿人形双臂">7+1-DOF Humanoid Arms</span>
+          <span class="hero__badge" data-en="2-Wheel Diff / 4-Wheel Drive" data-zh="两轮差速 / 四轮全驱">2-Wheel Diff / 4-Wheel Drive</span>
         </div>
       </div>
       <div class="hero__image">
@@ -59,18 +64,26 @@
 
         <div class="feature-card reveal">
           <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+          </div>
+          <h3 class="feature-card__title" data-en="Low-Cost Full Open Source" data-zh="低成本全开源">Low-Cost Full Open Source</h3>
+          <p class="feature-card__desc" data-en="Complete CAD files, firmware, and code open-sourced for free. Estimated BOM of only ≈ ¥5,718 RMB — build it with a Raspberry Pi or Jetson." data-zh="全套CAD文件、固件与代码完全免费开源。预估BOM仅为 ≈ 5,718 人民币 — 用树莓派或Jetson即可搭建。">Complete CAD files, firmware, and code open-sourced for free. Estimated BOM of only ≈ ¥5,718 RMB — build it with a Raspberry Pi or Jetson.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-card__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20M6 6l12 12M18 6L6 18"/></svg>
           </div>
-          <h3 class="feature-card__title" data-en="7-DOF Dual Arms + Grippers" data-zh="7自由度双臂 + 夹爪">7-DOF Dual Arms + Grippers</h3>
-          <p class="feature-card__desc" data-en="Two fully articulated 7-DOF arms with high-torque serial-bus servos and integrated grippers for precise manipulation tasks." data-zh="两条7自由度全关节手臂，采用高扭矩串行总线舵机，配备集成夹爪，实现精准操控任务。">Two fully articulated 7-DOF arms with high-torque serial-bus servos and integrated grippers for precise manipulation tasks.</p>
+          <h3 class="feature-card__title" data-en="7+1-DOF Humanoid Arms + Grippers" data-zh="7+1自由度仿人形双臂 + 夹爪">7+1-DOF Humanoid Arms + Grippers</h3>
+          <p class="feature-card__desc" data-en="Humanoid-form arms with 7 degrees of freedom plus integrated grippers, using high-torque serial-bus servos for precise manipulation." data-zh="仿人形双臂，每条手臂7个自由度外加集成夹爪，采用高扭矩串行总线舵机，实现精准操控。">Humanoid-form arms with 7 degrees of freedom plus integrated grippers, using high-torque serial-bus servos for precise manipulation.</p>
         </div>
 
         <div class="feature-card reveal">
           <div class="feature-card__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
           </div>
-          <h3 class="feature-card__title" data-en="Differential-Drive Base" data-zh="差速驱动底盘">Differential-Drive Base</h3>
-          <p class="feature-card__desc" data-en="Robust differential-drive locomotion using high-torque wheel servos for smooth, omnidirectional movement." data-zh="采用高扭矩轮式舵机的差速驱动系统，实现平稳全向移动。">Robust differential-drive locomotion using high-torque wheel servos for smooth, omnidirectional movement.</p>
+          <h3 class="feature-card__title" data-en="Dual-Mode Mobile Base" data-zh="双模式移动底盘">Dual-Mode Mobile Base</h3>
+          <p class="feature-card__desc" data-en="Switchable two-wheel differential or four-wheel all-wheel-drive locomotion using high-torque wheel servos." data-zh="可在两轮差速与四轮全驱之间切换的移动底盘，采用高扭矩轮式舵机。">Switchable two-wheel differential or four-wheel all-wheel-drive locomotion using high-torque wheel servos.</p>
         </div>
 
         <div class="feature-card reveal">
@@ -103,6 +116,14 @@
           </div>
           <h3 class="feature-card__title" data-en="Dual-Machine Teleop & Training" data-zh="双机遥操与训练">Dual-Machine Teleop & Training</h3>
           <p class="feature-card__desc" data-en="ZMQ-based dual-machine architecture for teleoperation, data collection, training, and real-time inference. Display via Rerun / Foxglove." data-zh="基于ZMQ的双机架构，支持遥操、数据采集、训练与实时推理。通过Rerun / Foxglove可视化显示。">ZMQ-based dual-machine architecture for teleoperation, data collection, training, and real-time inference. Display via Rerun / Foxglove.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M16 8l-3 5-5 3 3-5z"/><circle cx="12" cy="12" r="1"/></svg>
+          </div>
+          <h3 class="feature-card__title" data-en="Vision-Based Navigation" data-zh="视觉导航">Vision-Based Navigation</h3>
+          <p class="feature-card__desc" data-en="Camera-based autonomous navigation for obstacle avoidance and goal reaching without extra sensors." data-zh="基于相机的自主导航，无需额外传感器即可实现避障与目标到达。">Camera-based autonomous navigation for obstacle avoidance and goal reaching without extra sensors.</p>
         </div>
 
       </div>
@@ -141,7 +162,7 @@
             </tr>
             <tr>
               <td data-en="Base" data-zh="底盘">Base</td>
-              <td data-en="Differential drive (wheel servos)" data-zh="差速驱动（轮式舵机）">Differential drive (wheel servos)</td>
+              <td data-en="Two-wheel differential / four-wheel drive (switchable)" data-zh="两轮差速 / 四轮全驱（可切换）">Two-wheel differential / four-wheel drive (switchable)</td>
             </tr>
             <tr>
               <td data-en="Cameras" data-zh="相机">Cameras</td>
